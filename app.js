@@ -9,7 +9,13 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.get("/", function (req, res) {
-  res.render("index", { nama: "Bima Aditya", title: 'Beranda' });
+  res.render("index", { title: 'Beranda' });
+});
+app.get("/history", function (req, res) {
+  res.render("history", { title: 'Riwayat' });
+});
+app.get("/exercise", function (req, res) {
+  res.render("exercise", { title: 'Latihan' });
 });
 
 app.listen(port, function () {
