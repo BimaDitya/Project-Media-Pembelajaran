@@ -6,18 +6,19 @@ const path = require("path");
 // Use EJS Template Engine
 app.set('views', './views');
 app.set('view engine', 'ejs');
-app.use(express.static(path.join(__dirname, '/public')));
+
+app.use(express.static('public'));
 
 app.get("/", function (req, res) {
   res.render("index", { title: 'Beranda' });
 });
-app.get("/history", function (req, res) {
-  res.render("history", { title: 'Riwayat' });
-});
 app.get("/exercise", function (req, res) {
   res.render("exercise", { title: 'Latihan' });
 });
+app.get("/about", function (req, res) {
+  res.render("about", { title: 'Tentang' });
+});
 
 app.listen(port, function () {
-  return "Web is Running";
+  return `Web is Running 127.0.0.1:${port}`;
 });

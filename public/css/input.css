@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Body';
+        src: url('../fonts/body.ttf') format('truetype');
+
+        font-family: 'Header';
+        src: url('../fonts/header.ttf') format('truetype');
+    }
+}
