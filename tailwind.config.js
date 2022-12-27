@@ -3,12 +3,12 @@ module.exports = {
   content: ["./views/**/*.{html,ejs,js}"],
   theme: {
     fontFamily: {
-      body: ['Body'],
-      header: ['Header']
+      headline: ['Fira Sans'],
+      body: ['Source Sans Pro'],
     },
     extend: {
       animation: {
-        text: 'text 7.5s linear infinite',
+        text: 'text 10s linear infinite',
       },
       keyframes: {
         text: {

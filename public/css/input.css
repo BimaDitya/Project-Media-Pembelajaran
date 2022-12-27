@@ -4,10 +4,16 @@
 
 @layer base {
     @font-face {
-        font-family: 'Body';
-        src: url('../fonts/body.ttf') format('truetype');
+        font-family: 'Fira Sans';
+        src: url('../fonts/FiraSans-Regular.ttf');
 
-        font-family: 'Header';
-        src: url('../fonts/header.ttf') format('truetype');
+        font-family: 'Source Sans Pro';
+        src: url('../fonts/SourceSansPro-Regular.ttf');
+    }
+
+    @layer components {
+        .actives {
+            color: white;
+        }
     }
 }
