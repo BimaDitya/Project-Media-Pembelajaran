@@ -13,7 +13,7 @@
 
     @layer components {
         .actives {
-            color: white;
+            @apply text-neutral-50 border-b-2 py-2 border-cyan-400 font-medium
         }
     }
 }

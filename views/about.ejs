@@ -1,36 +1,33 @@
 <%- include('partials/header') %>
   <%- include('partials/navbar') %>
-    <div class="columns-2">
-      <div class="ml-16 flex items-center justify-center h-screen">
-        <div>
-          <p class="text-6xl font-headline font-black text-slate-800 py-2">
-            Hi!, Im <span
-              class="animate-text bg-gradient-to-r from-sky-600 via-teal-400 to-amber-200 bg-clip-text text-transparent">Bima
-              Aditya</span></p>
-          <p class="font-body text-justify text-gray-600">
-            I'am a student of Information Technology Education Study Program from Surabaya State University. I'm
-            Interested in the World of Graphic Design, Especially UI/UX Design. Besides Design, I Can Also Do Slicing
-            From User Interface Design To A Program (Front-end Development).
-          </p>
+    <div class="md:columns-2 md:mt-0 columns-1 mt-36">
+      <div class="md:ml-16 md:items-center md:h-screen md:p-0 flex items-center justify-center">
+        <div class="relative flex">
+          <div class="absolute md:w-44 md:h-44 w-44 h-44 rounded-full -right-20 -top-20 bg-teal-300 blur-xl">
+          </div>
+          <div class="absolute md:w-64 md:h-64 w-64 h-64 rounded-full -left-20 -bottom-20 bg-pink-300 blur-xl">
+          </div>
+          <div class="absolute md:w-24 md:h-24 w-24 h-24 rounded-full -left-12 -top-20 bg-amber-300 blur-xl">
+          </div>
+          <div class="absolute md:w-28 md:h-28 w-28 h-28 rounded-full -right-28 -bottom-8 bg-cyan-300 blur-xl">
+          </div>
+          <div class="rounded-full z-10 bg-gradient-to-tl from-teal-200 via-amber-200 to-pink-200 p-2 bg-clip-border">
+            <img class="rounded-full md:w-56 w-48" src="images/bima_aditya.png" alt="Developer" />
+          </div>
         </div>
       </div>
-      <div class="mr-16 flex items-center justify-center h-screen">
-        <div class="relative flex w-72">
-          <div
-            class="absolute w-48 h-48 rounded-full -right-20 -top-20 bg-gradient-to-bl from-amber-200 to-amber-600 shadow-lg">
-          </div>
-          <div
-            class="absolute w-64 h-64 rounded-full -left-20 -bottom-20 bg-gradient-to-tr from-amber-200 to-amber-600 shadow-lg">
-          </div>
-          <div
-            class="absolute w-16 h-16 rounded-full -left-4 -top-4 bg-gradient-to-br from-amber-200 to-amber-600 shadow-lg">
-          </div>
-          <div
-            class="absolute w-20 h-20 rounded-full -right-6 -bottom-6 bg-gradient-to-tl from-amber-200 to-amber-600 shadow-lg">
-          </div>
-          <div class="rounded-full z-10 border-4 border-sky-600 p-2 hover:shadow-lg">
-            <img class="rounded-full" src="/images/bima_aditya.png" alt="user image" />
-          </div>
+      <div class="md:mr-16 md:items-center md:h-screen md:py-0 md:px-0 flex items-start justify-center py-16 px-8">
+        <div class="z-30">
+          <p class="text-lg font-body italic text-gray-500">About Developer</p>
+          <p class="text-5xl font-headline font-black text-gray-700 py-2 md:text-6xl">
+            Hi!, Im <span
+              class="animate-text bg-gradient-to-r from-teal-300 via-amber-300 to-pink-300 bg-clip-text text-transparent">Bima
+              Aditya</span></p>
+          <p class="text-base font-body text-justify text-gray-500 md:text-lg">
+            I'am a student of Information Technology Education Study Program from Surabaya State University. I'm
+            interested in graphic design, especially UI/UX Design. Besides design, i can also do slicing
+            from user interface design to a Program (Front-end Development).
+          </p>
         </div>
       </div>
       <%- include('partials/footer') %>
