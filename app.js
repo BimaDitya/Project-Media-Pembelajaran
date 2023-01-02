@@ -11,8 +11,8 @@ app.use(express.static('public'));
 app.get("/", function (req, res) {
   res.render("index", { title: 'Beranda' });
 });
-app.get("/exercise", function (req, res) {
-  res.render("exercise", { title: 'Latihan' });
+app.get("/material", function (req, res) {
+  res.render("material", { title: 'Latihan' });
 });
 app.get("/about", function (req, res) {
   res.render("about", { title: 'Tentang' });

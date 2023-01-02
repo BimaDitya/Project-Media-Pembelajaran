@@ -13,7 +13,20 @@
 
     @layer components {
         .actives {
-            @apply text-neutral-50 border-b-4 py-2 border-cyan-200
-        }
+            @apply text-neutral-50 border-b-2 py-1 border-sky-400
+            }
+            
+            /* For Webkit-based browsers (Chrome, Safari and Opera) */
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            
+            /* For IE, Edge and Firefox */
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
+            }
     }
 }
