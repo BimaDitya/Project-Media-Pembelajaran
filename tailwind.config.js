@@ -3,8 +3,8 @@ module.exports = {
   content: ["./views/**/*.{html,ejs,js}"],
   theme: {
     fontFamily: {
-      headline: ['Fira Sans'],
-      body: ['Source Sans Pro'],
+      body: ["Source Sans Pro", "sans-serif"],
+      head: ["Roboto Slab", "sans-serif"],
     },
     extend: {
       width: {
