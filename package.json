@@ -2,11 +2,11 @@
   "name": "media_pembelajaran_project",
   "version": "1.0.0",
   "description": "",
-  "main": "App.JS",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "dev-css": "npx tailwindcss -i ./public/css/input.css -o ./public/css/index.css -w"
+    "css": "npx tailwindcss -i ./public/css/input.css -o ./public/css/index.css -w"
   },
   "author": "Bima Aditya",
   "license": "ISC",

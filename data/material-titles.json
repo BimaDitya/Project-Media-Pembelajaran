@@ -1,0 +1,19 @@
+[
+  {
+    "titleMaterial": "Data Definition Language",
+    "descriptionMaterial": "Kelompok Perintah atau Kueri yang Berfungsi untuk Mendefinisikan Atribut-atribut Basis Data, Tabel, Kolom, Batasan-batasan Terhadap Suatu Atribut, Serta Relasi antar Tabel.",
+    "subMaterial": "8"
+  },
+
+  {
+    "titleMaterial": "Data Manipulation Language",
+    "descriptionMaterial": "Kelompok Perintah atau Keuri yang Berfungsi untuk Memanipulasi Data dalam Basis Data, Seperti Pengambilan Data, Penyisipan Data, Pengubahan Data dan Penghapusan Data.",
+    "subMaterial": "10"
+  },
+
+  {
+    "titleMaterial": "Data Control Language",
+    "descriptionMaterial": "Kelompok Perintah atau Keuri yang Berfungsi untuk Mengendalikan Pengaksesan Data. Pengendalian Pengaksesan atau Kontrol Terhadap Data Dapat dilakukan Terhadap Operasi, Kolom, Tabel.",
+    "subMaterial": "2"
+  }
+]

@@ -15,7 +15,7 @@
 
     @layer components {
         .actives {
-            @apply text-neutral-50 border-b-2 py-1 border-sky-400
+            @apply text-white border-b-2 p-1 border-sky-300
             }
             
             /* For Webkit-based browsers (Chrome, Safari and Opera) */

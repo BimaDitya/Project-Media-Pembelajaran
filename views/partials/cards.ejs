@@ -1,14 +1,23 @@
 <div class="py-2.5">
-    <div class="transition ease-in-out delay-150 rounded-xl shadow-sm hover:shadow-lg bg-white duration-300">
-        <div class="flex flex-row justify-between p-3">
-            <div class="flex flex-row">
-                <img class="w-28 h-28" src="images/web-logo.svg">
-                <div class="flex flex-col pl-4">
-                    <div class="font-bold text-gray-600 font-head text-lg"><%= card.titleMaterial %></div>
-                    <p class="font-body text-gray-400 text-justify"><%= card.descriptionMaterial %></p>
-                </div>
-            </div>
-            <%- include('buttons', {buttonText: "Lihat Materi"}) %>
+  <div class="transition ease-in-out delay-150 rounded-xl shadow-sm hover:shadow-lg bg-white duration-300">
+    <div class="flex flex-row justify-between p-2">
+      <div class="flex flex-row">
+        <img class="w-24 h-24" src="images/web-logo.svg">
+        <div class="w-3/4 flex flex-col px-4 space-y-1">
+          <div class="font-bold text-gray-600 font-head text-lg">
+            <%= property.titleMaterial %>
+          </div>
+          <p class="font-body text-justify text-gray-400">
+            <%= property.descriptionMaterial %>
+          </p>
+          <p class="text-gray-600 font-head">
+            <%= property.subMaterial %> Submateri
+          </p>
         </div>
+        <div class="w-1/4">
+          <%- include('buttons', {buttonText: "Lihat Materi" }) %>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

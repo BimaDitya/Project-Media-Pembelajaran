@@ -13,13 +13,16 @@ app.get("/", function (req, res) {
   res.render("index", { title: 'Beranda' });
 });
 app.get("/material", function (req, res) {
-  const loadMaterialCard = () => {
-    const fileBuffer = fs.readFileSync('data/materials.json', 'utf-8');
-    const materialCard = JSON.parse(fileBuffer);
-    return materialCard;
+  const loadMaterialCardTitles = () => {
+    const fileBuffer = fs.readFileSync('data/material-titles.json', 'utf-8');
+    const materialCardTitles = JSON.parse(fileBuffer);
+    return materialCardTitles;
   };
-  const materialCards = loadMaterialCard();
-  res.render("material", { title: 'Materi', materialCards });
+  const materialCardTitles = loadMaterialCardTitles();
+  res.render("material", { title: 'Materi', materialCardTitles });
+});
+app.get("/material-detail", function (req, res) {
+  res.render("material-detail", { title: 'Materi' });
 });
 app.get("/about", function (req, res) {
   res.render("about", { title: 'Tentang' });

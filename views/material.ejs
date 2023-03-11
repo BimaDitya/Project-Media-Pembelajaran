@@ -1,12 +1,12 @@
 <%- include('partials/header') %>
 <%- include('partials/navbar') %>
 <p class="text-xl font-bold font-body text-center text-gray-600 mt-4">
-  Daftar Materi
+  Daftar Materi SQL
 </p>
-<div class="flex flex-col h-screen my-2 mx-24">
+<div class="flex flex-col h-screen my-2 mx-36">
   <!-- Card -->
-  <% materialCards.forEach(card => { %>
-  <%- include('partials/cards', {card}) %>
+  <% materialCardTitles.forEach(property => { %>
+  <%- include('partials/cards', {property}) %>
   <% }) %>
 </div>
 <%- include('partials/footer') %>
